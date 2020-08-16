@@ -1,5 +1,6 @@
-import {epic} from 'epic.js';
-import {ikon} from 'ikon.js';
+// import { epic } from './epic.js';
+// import { ikon } from './ikon.js';
+
 
 let map;
 
