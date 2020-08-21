@@ -96,8 +96,6 @@ function geocodeAddress(_geocoder, _resultsMap) {
                 location: address,
                 lat: results[0].geometry.location.lat(),
                 lng: results[0].geometry.location.lng(),
-
-                //CHANGE PASS NAME
                 pass: "epic"
               });
             } else {
