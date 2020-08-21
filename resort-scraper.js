@@ -1,14 +1,21 @@
-//https://www.epicpass.com/passes/epic-pass.aspx
-// var resorts = document.getElementsByClassName("c43__resort--v2 uppercase");
+// lists pulled from:
+// "https://www.epicpass.com/passes/epic-pass.aspx"
+// "https://www.ikonpass.com/en/shop-passes/ikon-pass-2020-2021"
+// "https://mountaincollective.com/"
+// "https://www.powderalliance.com/partner-resorts/"
 
-//https://www.ikonpass.com/en/shop-passes/ikon-pass-2020-2021
-var resorts = document.getElementsByClassName("pass-detail-destination-name");
 
 
+//to use this script: visit the page you wish to scrape resort names from, insert className (class of div holding text), then run script in console and save results to a file
+//this script will automatically remove duplicates
+var className = 'insert html #class name here'
 
 var resortsList = [];
 var resortsFiltered = "";
 var resortsCSV = "";
+
+var resorts = document.getElementsByClassName(className);
+
 
 for (var i = 0; i < resorts.length; i++) {
   var resort = resorts[i].innerText;
