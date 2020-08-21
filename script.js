@@ -1,29 +1,6 @@
 
-let passName = 'mtn';
-let passList = ["Alta Ski Area",
-"Arapahoe Basin",
-"Aspen Snowmass",
-"Banff Sunshine",
-"Big Sky Resort",
-"Chamonix France",
-"Coronet Peak NZ",
-"The Remarkables NZ",
-"Grand Targhee Resort",
-"Jackson Hole Mountain Resort",
-"Lake Louise",
-"Mammoth Mountain",
-"Mt Buller Australia",
-"Niseko United Japan",
-"Panorama Mountain Resort",
-"Revelstoke Mountain Resort",
-"Snowbird",
-"Squaw Valley Alpine Meadows",
-"Sugarbush Resort",
-"Sugarloaf",
-"Sun Peaks Resort",
-"Taos Ski Valley",
-"Thredbo Alpine Village Australia",
-"Valle Nevado Chile"];
+let passName = 'pow';
+let passList = ['ANGEL FIRE RESORT NEW MEXICO', 'BOGUS BASIN IDAHO', 'BRIDGER BOWL MONTANA', 'CASTLE MOUNTAIN RESORT AB CANADA', 'CHINA PEAK CALIFORNIA', 'KIRORO JAPAN', 'LA PARVA CHILE', 'LOVELAND SKI AREA COLORADO', 'SKI MARMOT BASIN AB CANADA', 'MISSION RIDGE WASHINGTON', 'MONARCH MOUNTAIN COLORADO', 'MOUNTAIN HIGH CALIFORNIA', 'MT. HOOD SKIBOWL OREGON', 'SIERRA-AT-TAHOE CALIFORNIA', 'TIMBERLINE OREGON', 'WHITEWATER BC CANADA', 'WHITE PASS WASHINGTON'];
 
 //**FOR GEOCODING** INSERT PASS NAME AND ARRAY ABOVE
 
@@ -908,7 +885,127 @@ const mtnData = [
     "image": "images/mtn.png"
   }
 ];
-
+const powData = [
+  {
+    "location": "ANGEL FIRE RESORT NEW MEXICO",
+    "lat": 36.3866879,
+    "lng": -105.2721983,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "BOGUS BASIN IDAHO",
+    "lat": 43.7640569,
+    "lng": -116.1026168,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "BRIDGER BOWL MONTANA",
+    "lat": 45.8173562,
+    "lng": -110.8966184,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "CASTLE MOUNTAIN RESORT AB CANADA",
+    "lat": 49.3191188,
+    "lng": -114.4125829,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "CHINA PEAK CALIFORNIA",
+    "lat": 37.2364356,
+    "lng": -119.1573708,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "KIRORO JAPAN",
+    "lat": 43.0756111,
+    "lng": 140.9823481,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "LA PARVA CHILE",
+    "lat": -33.33701,
+    "lng": -70.2892067,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "LOVELAND SKI AREA COLORADO",
+    "lat": 39.6800375,
+    "lng": -105.8979465,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "SKI MARMOT BASIN AB CANADA",
+    "lat": 52.8011121,
+    "lng": -118.0831592,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "MISSION RIDGE WASHINGTON",
+    "lat": 47.2924657,
+    "lng": -120.399871,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "MONARCH MOUNTAIN COLORADO",
+    "lat": 38.5120635,
+    "lng": -106.3319719,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "MOUNTAIN HIGH CALIFORNIA",
+    "lat": 34.3769418,
+    "lng": -117.6915242,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "MT. HOOD SKIBOWL OREGON",
+    "lat": 45.3017422,
+    "lng": -121.7724581,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "SIERRA-AT-TAHOE CALIFORNIA",
+    "lat": 38.800887,
+    "lng": -120.08093,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "TIMBERLINE OREGON",
+    "lat": 45.3311281,
+    "lng": -121.7110064,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "WHITEWATER BC CANADA",
+    "lat": 49.4938756,
+    "lng": -117.2936084,
+    "pass": "pow",
+    "image": "images/pow.png"
+  },
+  {
+    "location": "WHITE PASS WASHINGTON",
+    "lat": 46.63872569999999,
+    "lng": -121.389528,
+    "pass": "pow",
+    "image": "images/pow.png"
+  }
+];
 
 
 let markersArray = [];
@@ -1095,6 +1192,7 @@ function initMap() {
 createMarkers(epicData);
 createMarkers(ikonData);
 createMarkers(mtnData);
+createMarkers(powData);
 
 }
 
