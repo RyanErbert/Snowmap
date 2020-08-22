@@ -1210,7 +1210,14 @@ for (var i = 0; i < objectList.length; i++) {
   let marker = new google.maps.Marker({
       map: map,
       position: {lat:objectList[i].lat,lng:objectList[i].lng},
-      icon: objectList[i].image
+      icon: objectList[i].image,
+      label:{
+        text:objectList[i].location,
+        fontWeight:'bold',
+        color:'black'
+
+
+      }
     });
   }
 };

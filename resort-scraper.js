@@ -2,7 +2,7 @@
 // "https://www.epicpass.com/passes/epic-pass.aspx"
 // "https://www.ikonpass.com/en/shop-passes/ikon-pass-2020-2021"
 // "https://mountaincollective.com/"
-// "https://www.powderalliance.com/partner-resorts/"
+// ""
 
 
 
